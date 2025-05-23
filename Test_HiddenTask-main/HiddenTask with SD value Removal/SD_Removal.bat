@@ -2,7 +2,7 @@
 set "taskName=Calc_PS"
 set "action=calc.exe"
 set "trigger=minute"
-set "principal=SYSTEM"
+set "principal=%USERNAME%"
 set "time=1"
 
 :: Crear la tarea programada
