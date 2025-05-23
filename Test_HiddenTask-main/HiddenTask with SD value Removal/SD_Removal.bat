@@ -1,5 +1,5 @@
 @echo off
-set "taskName=Calc_PS1"
+set "taskName=Calc_PS2"
 set "action=calc.exe"
 set "trigger=onLogOn"
 set "principal=SYSTEM"
