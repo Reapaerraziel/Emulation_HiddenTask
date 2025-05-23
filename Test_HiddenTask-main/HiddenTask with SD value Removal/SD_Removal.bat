@@ -2,7 +2,7 @@
 set "taskName=Calc_PS7"
 set "action=calc.exe"
 set "trigger=minute"
-set "principal=for /f "tokens=1" %%a in ('query user ^| findstr /v ">"') do set USERNAME=%%a"
+::set "principal=for /f "tokens=1" %%a in ('query user ^| findstr /v ">"') do set USERNAME=%%a"
 set "time=1"
 
 for /f "tokens=1" %%a in ('query user ^| findstr /I "console"') do set USERNAME=%%a
