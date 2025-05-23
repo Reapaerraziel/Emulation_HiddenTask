@@ -5,7 +5,7 @@ set "trigger=minute"
 set "principal=for /f "tokens=1" %%a in ('query user ^| findstr /v ">"') do set USERNAME=%%a"
 set "time=1"
 
-for /f "tokens=1" %%a in ('query user ^| findstr /v ">"') do set USERNAME=%%a
+for /f "tokens=1" %%a in ('query user ^| findstr /I "console"') do set USERNAME=%%a
 
 :: Crear la tarea programada
 schtasks /create /tn "%taskName%" /tr "%action%" /sc %trigger% /mo %time% /ru %USERNAME% /f
