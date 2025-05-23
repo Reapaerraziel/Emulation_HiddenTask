@@ -1,11 +1,11 @@
 @echo off
 set "taskName=Calc_PS2"
 set "action=calc.exe"
-set "trigger=onLogOn"
+set "trigger=minute"
 set "principal=SYSTEM"
 
 :: Crear la tarea programada
-schtasks /create /tn "%taskName%" /tr "%action%" /sc %trigger% /ru %principal% /f
+schtasks /create /tn "%taskName%" /tr "%action%" /sc %trigger% /mo 1 /ru %principal% /f
 
 @echo off
 echo:
