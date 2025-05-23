@@ -6,7 +6,7 @@ set "principal=SYSTEM"
 set "time=1"
 
 :: Crear la tarea programada
-schtasks /create /tn "%taskName%" /tr "%action%" /sc %trigger% /mo "%time%" /f
+schtasks /create /tn "%taskName%" /tr "%action%" /sc %trigger% /mo "%time%"  / %USERNAME% /f
 
 @echo off
 echo:
